@@ -118,7 +118,9 @@ figure {
       display: block;
       text-align: center;
       color: #000;
-      padding-right: .3em; }
+      padding-right: .3em;
+      font-family: 'Roboto', sans-serif;
+      }
   #colorlib-aside #colorlib-main-menu {
     display: block;
     width: 100%; }
