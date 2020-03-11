@@ -996,7 +996,7 @@ body.offcanvas {
       -webkit-transform: translate3d(0, -15px, 0);
       transform: translate3d(0, -15px, 0);
       margin-bottom: 15px; }
-      .project .desc h3 a {
+      .project .desc a h3{
         color: #fff; }
     .project .desc span {
       display: block;
