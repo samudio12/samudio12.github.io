@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   /* Home Slideshow Vegas
   -----------------------------------------------*/
-  $(function() {
+  /*$(function() {
     $('body').vegas({
         slides: [
             { src: 'images/slide-1.jpg' },
@@ -19,7 +19,7 @@ $(document).ready(function() {
         timer: false,
         transition: [ 'zoomOut', ]
     });
-  });
+  });*/
 
 
    /* Back top
