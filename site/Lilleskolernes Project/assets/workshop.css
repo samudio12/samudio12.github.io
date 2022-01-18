@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+  }  
+
+body {
+    background-color: #F2E7D1;
+    margin: 0;
+    padding: 0;
+    font-family: FuturaPTLight;
+}
+
+body > p {
+  font-size: 1.2em;
+}
+
+/*Creating a grid*/
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas:
+    'header'
+    'main'
+    'timeline'
+    'footer';
+}
+
+.header, .main, .footer .timeline {
+    width: 100%;
+}
+
+.footer {
+  height: auto;
+  background-color: #f7f4e6;
+  padding-top: 25px;
+}
+
+.img-container {
+  padding-bottom: 100px;
+
+}
+
+.header {
+  background-color: #f7f4e6;
+}
+
+.header img {
+  position: absolute;
+  height: 200px;
+  left: 50px;
+  top: -15px;
+}
+
+.header ul li {
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: black;
+  }
+
+.header ul {
+  float: right;
+  text-decoration: none;
+}
+
+.header ul li.active {
+  font-family: FuturaPTBold;
+}
+
+.main > div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.au-description-wrapper{
+  display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: center;
+    padding-top: 100px!important;
+}
+
+.ws-description-wrapper{
+  display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: center;
+}
+
+#ws-description-wrapper div:first-child {
+    width: 40%;
+}
+
+.ws-brush-container {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: FuturaPTBold;
+  }
+
+.ws-brush-container-book {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-family: FuturaPTBold;
+  padding-top: 50px;
+}
+
+
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .white-text {
+    color:white;
+  }
+  .white-text h2 a {
+    text-decoration: none;
+    color: white;
+    
+  }
+
+  .black-text h2 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #first-column {
+      display: inline-block;
+      width: 50%;
+  }
+
+  #sec-column {
+      display: inline-block;
+      width: 50%;
+      float: right;
+  }
+
+  /*Changing the fonts on the page*/
+  #first-column >* {
+    font-family: FuturaPTBold;
+    
+  }
+  #sec-column >* {
+    font-family: FuturaPTBold;
+  }
+
+  .title{
+      font-family: liquidofluid;
+      font-size: 5em;
+      margin: 0;
+  }
+
+  #ws-flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ws-flex-container > div >img {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main .ws-description-wrapper:nth-child(2) {
+    display: block;
+  }
+
+  .spaced {
+    padding-bottom: 70px;
+  }
+  .top-space {
+    padding-top: 100px; 
+  }
+
+
+  #hiphop {
+    width: 600px;
+    
+  }
+
+  #time, #place {
+    font-size: 1.3em;
+    padding-left: 20px;
+    display: inline-block;
+    margin: 0;
+  }
+
+/*Fonts*/
+@font-face {
+    font-family: 'liquidofluid';
+    src: url('fonts/liquido-fluid-webfont.woff2') format('woff2'),
+         url('fonts/liquido-fluid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'FuturaPTLight';
+    src: url("fonts/FuturaPTLight.otf") format("opentype");
+  }
+  @font-face {
+    font-family: 'FuturaPTBold';
+    src: url("fonts/FuturaPTBold.otf") format("opentype");
+  }
+
+  /*Media queries*/
+  @media screen and (max-width: 800px) {
+    .ws-description-wrapper{
+      flex-direction: column;
+    }
+    .ws-description-wrapper div:first-child{
+      width: 70%;
+      margin: 0 auto;
+    }
+    #first-column p {
+      
+    }
+  }
