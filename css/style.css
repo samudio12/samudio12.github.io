@@ -235,7 +235,7 @@ footer {
   text-align: center;
   height: 100vh;
   color: #ffffff;
-  background-image: url(./images/bg4.jpg);
+  background-image: url(/images/bg4.jpg);
   background-size: cover;
 }
 
