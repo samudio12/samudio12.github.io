@@ -452,7 +452,7 @@ footer a:hover {
 
 /* Back top */
 .go-top {
-  background-color: #eee;
+  background-color: #626262;
   bottom: 2em;
   right: 2em;
   color: #111112;
@@ -548,6 +548,24 @@ footer a:hover {
 .social-icon li a:hover {
   background-color: #ffffff;
   color: #111112;
+}
+
+.sortable-grid {
+    min-height: 600px;
+    margin-top: 50px;
+}
+
+.grid-filter-label {
+    margin-bottom: -62px;
+    color: #999;    
+}
+
+.grid-item{
+    padding-top: 25px;
+}
+
+.project-captions {
+    display: none;
 }
 
 /* Mobile Responsive */
