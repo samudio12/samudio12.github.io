@@ -564,8 +564,12 @@ footer a:hover {
     padding-top: 25px;
 }
 
-.project-captions {
-    display: none;
+.grid-item a:hover,.grid-item a:focus {
+    text-decoration: none;
+}
+
+.fancybox-caption__body {
+    font-size: 30px;
 }
 
 /* Mobile Responsive */
